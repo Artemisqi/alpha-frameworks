@@ -8,6 +8,8 @@ export interface Post {
   body: string;
   readTime: string;
   published: boolean;
+  coverImage?: string;
+  tags?: string[];
 }
 
 export const defaultPosts: Post[] = [
@@ -21,6 +23,8 @@ export const defaultPosts: Post[] = [
       "当 Agent Flow 进入多模型协同阶段，真正的 alpha 不在单个模型能力，而在委员会规则、共识形成和分工结构。",
     readTime: "8 min read",
     published: true,
+    tags: ["AI", "Agent", "Multi-model", "Decision Systems"],
+    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
     body: `
       <p>过去一个阶段，市场对 AI 的理解更多停留在单模型能力的提升。但真正有意思的变化，可能发生在多模型协同与流程设计层。</p>
       <p>当 GPT、Claude、Gemini、Qwen 这类模型被放入同一个工作流，它们不再只是替代关系，而可以形成互相审查、互相补充、彼此纠错的委员会结构。</p>
@@ -49,6 +53,8 @@ export const defaultPosts: Post[] = [
       "HBM、封装、带宽与推理成本共同决定了新一轮价值分配。真正值得研究的是瓶颈如何迁移，而不是只看传统 DRAM 周期。",
     readTime: "6 min read",
     published: true,
+    tags: ["Semiconductors", "HBM", "AI Infrastructure", "Memory"],
+    coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=600&fit=crop",
     body: `
       <p>传统半导体周期的分析框架正在失效。当 AI 训练和推理的需求指数级增长，存储不再只是"周期性商品"，而变成了基础设施瓶颈。</p>
       <h2>HBM 的结构性变化</h2>
@@ -73,6 +79,8 @@ export const defaultPosts: Post[] = [
       "地缘冲突如何通过油价传导至通胀预期，进而改变市场的风格偏好和资产配置逻辑。",
     readTime: "5 min read",
     published: true,
+    tags: ["Geopolitics", "Oil", "Inflation", "Macro"],
+    coverImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=600&fit=crop",
     body: `
       <p>地缘政治风险的市场定价，往往不在事件本身，而在传导链条。伊朗局势的升级需要关注的不是冲突本身，而是它如何影响油价、通胀预期和央行决策。</p>
       <h2>传导路径</h2>
@@ -90,6 +98,8 @@ export const defaultPosts: Post[] = [
       "Datadog 如何从监控工具进化为 AI 工作流的核心基础设施，以及这对 SaaS 估值框架的影响。",
     readTime: "7 min read",
     published: true,
+    tags: ["SaaS", "Datadog", "Observability", "AI Workflow"],
+    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
     body: `
       <p>Datadog 的故事不只是 observability。当 AI agent 成为企业标配，谁来监控 agent 的行为、成本和可靠性？这正是 Datadog 的下一个增长引擎。</p>
       <h2>从监控到 AI 工作流</h2>
@@ -107,6 +117,8 @@ export const defaultPosts: Post[] = [
       "当 AI 能力分层化，全球价值链的重构不只是芯片，还包括数据、算力、应用和监管的多维博弈。",
     readTime: "6 min read",
     published: true,
+    tags: ["Global", "AI", "Value Chain", "Macro"],
+    coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=600&fit=crop",
     body: `
       <p>AI 的全球化不是简单的技术扩散，而是一场多维度的价值链重构。芯片管制只是冰山一角，真正的博弈发生在数据主权、算力分配、应用生态和监管框架等多个层面。</p>
       <h2>价值链的分层</h2>
@@ -124,6 +136,8 @@ export const defaultPosts: Post[] = [
       "为什么记录判断过程比记录结论更有价值，以及如何建立一个可复盘的思考系统。",
     readTime: "4 min read",
     published: true,
+    tags: ["Thinking", "Judgment", "Decision Making", "Meta"],
+    coverImage: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=1200&h=600&fit=crop",
     body: `
       <p>大多数人只记录结论："我看好 X"，"Y 会涨"。但真正有价值的是记录判断过程：基于什么信息、什么框架、什么假设得出了这个结论。</p>
       <h2>为什么过程比结论重要</h2>
