@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+article h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 32px;
+  color: #f4f4f5;
+}
+
+article ul {
+  padding-left: 24px;
+  line-height: 2;
+}
