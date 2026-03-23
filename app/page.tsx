@@ -181,6 +181,7 @@ export default function HomePage() {
                   >
                     <CategoryIcon category={featured.category} size={20} />
                     {featured.category}
+                    {featured.mood && <span style={{ fontSize: 16 }}>{featured.mood}</span>}
                   </div>
                   <h2
                     style={{

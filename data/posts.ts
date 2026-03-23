@@ -10,6 +10,8 @@ export interface Post {
   published: boolean;
   coverImage?: string;
   tags?: string[];
+  mood?: string;
+  images?: string[];
 }
 
 export const defaultPosts: Post[] = [
@@ -24,6 +26,7 @@ export const defaultPosts: Post[] = [
     readTime: "8 min read",
     published: true,
     tags: ["AI", "Agent", "Multi-model", "Decision Systems"],
+    mood: "🔥",
     coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop",
     body: `
       <p>过去一个阶段，市场对 AI 的理解更多停留在单模型能力的提升。但真正有意思的变化，可能发生在多模型协同与流程设计层。</p>
@@ -54,6 +57,7 @@ export const defaultPosts: Post[] = [
     readTime: "6 min read",
     published: true,
     tags: ["Semiconductors", "HBM", "AI Infrastructure", "Memory"],
+    mood: "🧠",
     coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=600&fit=crop",
     body: `
       <p>传统半导体周期的分析框架正在失效。当 AI 训练和推理的需求指数级增长，存储不再只是"周期性商品"，而变成了基础设施瓶颈。</p>
@@ -80,6 +84,7 @@ export const defaultPosts: Post[] = [
     readTime: "5 min read",
     published: true,
     tags: ["Geopolitics", "Oil", "Inflation", "Macro"],
+    mood: "⚡",
     coverImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&h=600&fit=crop",
     body: `
       <p>地缘政治风险的市场定价，往往不在事件本身，而在传导链条。伊朗局势的升级需要关注的不是冲突本身，而是它如何影响油价、通胀预期和央行决策。</p>
@@ -99,6 +104,7 @@ export const defaultPosts: Post[] = [
     readTime: "7 min read",
     published: true,
     tags: ["SaaS", "Datadog", "Observability", "AI Workflow"],
+    mood: "💡",
     coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
     body: `
       <p>Datadog 的故事不只是 observability。当 AI agent 成为企业标配，谁来监控 agent 的行为、成本和可靠性？这正是 Datadog 的下一个增长引擎。</p>
@@ -118,6 +124,7 @@ export const defaultPosts: Post[] = [
     readTime: "6 min read",
     published: true,
     tags: ["Global", "AI", "Value Chain", "Macro"],
+    mood: "🌍",
     coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&h=600&fit=crop",
     body: `
       <p>AI 的全球化不是简单的技术扩散，而是一场多维度的价值链重构。芯片管制只是冰山一角，真正的博弈发生在数据主权、算力分配、应用生态和监管框架等多个层面。</p>
@@ -137,6 +144,7 @@ export const defaultPosts: Post[] = [
     readTime: "4 min read",
     published: true,
     tags: ["Thinking", "Judgment", "Decision Making", "Meta"],
+    mood: "✨",
     coverImage: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=1200&h=600&fit=crop",
     body: `
       <p>大多数人只记录结论："我看好 X"，"Y 会涨"。但真正有价值的是记录判断过程：基于什么信息、什么框架、什么假设得出了这个结论。</p>
