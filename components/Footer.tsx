@@ -48,6 +48,7 @@ export default function Footer() {
               { href: "/blog", label: "Blog" },
               { href: "/about", label: "About" },
               { href: "/archive", label: "Archive" },
+              { href: "/admin", label: "Admin" },
             ].map((item) => (
               <Link
                 key={item.href}
