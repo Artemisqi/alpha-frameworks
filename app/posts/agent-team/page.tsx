@@ -1,5 +1,65 @@
+"use client";
+
+import { useState } from "react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+
+function CopyLinkButton() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      style={{
+        background: "transparent",
+        color: "#a1a1aa",
+        border: "1px solid #3f3f46",
+        borderRadius: "12px",
+        padding: "8px 16px",
+        fontSize: "14px",
+        cursor: "pointer",
+      }}
+    >
+      {copied ? "Copied!" : "Copy link"}
+    </button>
+  );
+}
+
+function ShareToXButton() {
+  const handleShare = () => {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent(document.title);
+    window.open(
+      `https://x.com/intent/tweet?url=${url}&text=${text}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
+  return (
+    <button
+      onClick={handleShare}
+      style={{
+        background: "transparent",
+        color: "#a1a1aa",
+        border: "1px solid #3f3f46",
+        borderRadius: "12px",
+        padding: "8px 16px",
+        fontSize: "14px",
+        cursor: "pointer",
+      }}
+    >
+      Share on X
+    </button>
+  );
+}
 
 export default function AgentTeamPostPage() {
   return (
@@ -45,9 +105,18 @@ export default function AgentTeamPostPage() {
               marginTop: "20px",
               color: "#71717a",
               fontSize: "14px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              flexWrap: "wrap",
+              gap: "12px",
             }}
           >
-            Mar 2026 · 8 min read
+            <span>Mar 2026 · 8 min read</span>
+            <div style={{ display: "flex", gap: "8px" }}>
+              <CopyLinkButton />
+              <ShareToXButton />
+            </div>
           </div>
 
           <p

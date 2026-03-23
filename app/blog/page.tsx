@@ -52,52 +52,33 @@ export default function BlogPage() {
         </p>
 
         <div style={{ marginTop: "40px", display: "grid", gap: "20px" }}>
-          <div
+          <Link
+            href="/posts/agent-team"
             style={{
-              border: "1px solid #27272a",
-              borderRadius: "24px",
-              padding: "24px",
-              background: "#18181b",
+              textDecoration: "none",
+              color: "inherit",
             }}
           >
-            <div style={{ fontSize: "12px", color: "#71717a" }}>
-              AI / Systems · Mar 2026
+            <div
+              style={{
+                border: "1px solid #27272a",
+                borderRadius: "24px",
+                padding: "24px",
+                background: "#18181b",
+                cursor: "pointer",
+              }}
+            >
+              <div style={{ fontSize: "12px", color: "#71717a" }}>
+                AI / Systems · Mar 2026
+              </div>
+              <h2 style={{ marginTop: "16px", fontSize: "26px" }}>
+                Agent Team：从单一模型走向委员会式决策
+              </h2>
+              <p style={{ color: "#a1a1aa", lineHeight: 1.8 }}>
+                当 Agent Flow 进入多模型协同阶段，真正的 alpha 不在单个模型能力，而在委员会规则、共识形成和分工结构。
+              </p>
             </div>
-            <h2 style={{ marginTop: "16px", fontSize: "26px" }}>
-              Agent Team：从单一模型走向委员会式决策
-            </h2>
-            <p style={{ color: "#a1a1aa", lineHeight: 1.8 }}>
-              当 Agent Flow 进入多模型协同阶段，真正的 alpha 不在单个模型能力，而在委员会规则、共识形成和分工结构。
-            </p>
-          </div>
-
-<Link
-  href="/posts/agent-team"
-  style={{
-    textDecoration: "none",
-    color: "inherit",
-  }}
->
-  <div
-    style={{
-      border: "1px solid #27272a",
-      borderRadius: "24px",
-      padding: "24px",
-      background: "#18181b",
-      cursor: "pointer",
-    }}
-  >
-    <div style={{ fontSize: "12px", color: "#71717a" }}>
-      AI / Systems · Mar 2026
-    </div>
-    <h2 style={{ marginTop: "16px", fontSize: "26px" }}>
-      Agent Team：从单一模型走向委员会式决策
-    </h2>
-    <p style={{ color: "#a1a1aa", lineHeight: 1.8 }}>
-      当 Agent Flow 进入多模型协同阶段，真正的 alpha 不在单个模型能力，而在委员会规则、共识形成和分工结构。
-    </p>
-  </div>
-</Link>
+          </Link>
 
           <div
             style={{
