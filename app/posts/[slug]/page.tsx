@@ -128,6 +128,17 @@ export default function PostPage() {
             >
               {post.category}
             </span>
+            {post.mood && (
+              <span
+                style={{
+                  marginLeft: 4,
+                  fontSize: 24,
+                  lineHeight: 1,
+                }}
+              >
+                {post.mood}
+              </span>
+            )}
           </div>
 
           {/* Title */}

@@ -140,6 +140,9 @@ export default function BlogPage() {
                       <span style={{ fontSize: 12, color: "#6e6e73", fontWeight: 500 }}>
                         {post.category}
                       </span>
+                      {post.mood && (
+                        <span style={{ marginLeft: "auto", fontSize: 18 }}>{post.mood}</span>
+                      )}
                     </div>
 
                     <h2
