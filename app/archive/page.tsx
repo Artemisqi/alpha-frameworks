@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 export default function ArchivePage() {
@@ -61,9 +62,11 @@ export default function ArchivePage() {
           >
             <h2 style={{ margin: 0, fontSize: "28px" }}>2026</h2>
             <div style={{ marginTop: "20px", display: "grid", gap: "12px" }}>
-              <div style={{ padding: "14px 16px", border: "1px solid #3f3f46", borderRadius: "16px" }}>
-                Agent Team：从单一模型走向委员会式决策
-              </div>
+              <Link href="/posts/agent-team" style={{ textDecoration: "none", color: "inherit" }}>
+                <div style={{ padding: "14px 16px", border: "1px solid #3f3f46", borderRadius: "16px", cursor: "pointer" }}>
+                  Agent Team：从单一模型走向委员会式决策
+                </div>
+              </Link>
               <div style={{ padding: "14px 16px", border: "1px solid #3f3f46", borderRadius: "16px" }}>
                 伊朗冲突的市场传导：油价、通胀与风格切换
               </div>
